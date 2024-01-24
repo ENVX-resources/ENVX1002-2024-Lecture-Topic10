@@ -4,7 +4,7 @@
 
 ### [View slides in HTML](https://envx-resources.github.io/ENVX1002-2024-Lecture-Topic10/)
 
-**Topic X: Slide title here** | Semester 1, 2024
+**Topic 10: Linear functions** | Semester 1, 2024
 
 ### License and attribution
 
