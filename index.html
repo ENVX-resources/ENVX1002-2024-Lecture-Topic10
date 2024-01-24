@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="template_files/libs/clipboard/clipboard.min.js"></script>
-<script src="template_files/libs/quarto-html/tabby.min.js"></script>
-<script src="template_files/libs/quarto-html/popper.min.js"></script>
-<script src="template_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="template_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="template_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="template_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="template_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="envx1002-w10-lecture_files/libs/clipboard/clipboard.min.js"></script>
+<script src="envx1002-w10-lecture_files/libs/quarto-html/tabby.min.js"></script>
+<script src="envx1002-w10-lecture_files/libs/quarto-html/popper.min.js"></script>
+<script src="envx1002-w10-lecture_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="envx1002-w10-lecture_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="envx1002-w10-lecture_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="envx1002-w10-lecture_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="envx1002-w10-lecture_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Januar Harianto">
-  <title>Quarto reveal.js Template</title>
+  <title>Topic 10 – Linear functions</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="envx1002-w10-lecture_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="envx1002-w10-lecture_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -95,7 +95,7 @@
     code span.vs { color: #032f62; } /* VerbatimString */
     code span.wa { color: #ff5555; } /* Warning */
   </style>
-  <link rel="stylesheet" href="template_files/libs/revealjs/dist/theme/quarto.css">
+  <link rel="stylesheet" href="envx1002-w10-lecture_files/libs/revealjs/dist/theme/quarto.css">
   <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
   <script>document.addEventListener("DOMContentLoaded", function () {
  var mathElements = document.getElementsByClassName("math");
@@ -112,11 +112,11 @@
 }}});
   </script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
-  <link href="template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="template_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="template_files/libs/revealjs/plugin/verticator/verticator.css" rel="stylesheet">
-  <link href="template_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link href="envx1002-w10-lecture_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="envx1002-w10-lecture_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="envx1002-w10-lecture_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="envx1002-w10-lecture_files/libs/revealjs/plugin/verticator/verticator.css" rel="stylesheet">
+  <link href="envx1002-w10-lecture_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -407,7 +407,7 @@
     <div class="slides">
 
 <section id="title-slide" data-background-image="_extensions/soles/logo/title-slide.png" data-background-size="contain" class="quarto-title-block center">
-  <h1 class="title">Quarto reveal.js Template</h1>
+  <h1 class="title">Topic 10 – Linear functions</h1>
   <p class="subtitle">School of Life and Environmental Sciences (SOLES)</p>
 
 <div class="quarto-title-authors">
@@ -424,164 +424,1156 @@ Januar Harianto
   <p class="date">Jan 2024</p>
 </section>
 <section>
-<section id="about" class="title-slide slide level1 center">
-<h1>About</h1>
-<div class="callout callout-important callout-titled callout-style-default">
+<section id="recap" class="title-slide slide level1 center">
+<h1>Recap</h1>
+
+</section>
+<section id="last-week" class="slide level2">
+<h2>Last week…</h2>
+<ul>
+<li>Correlation <span class="math inline">r</span>: a measure of the strength and direction of the linear relationship between two variables</li>
+<li>Is there a causal relationship between two variables?
+<ul>
+<li><strong>No</strong>: use correlation analysis</li>
+<li><strong>Yes</strong>: use <em>regression analysis</em></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<h3 id="simple-linear-regression-modelling">Simple linear regression modelling</h3>
+<p><span class="math display"> Y_i = \beta_0 + \beta_1 x_i + \epsilon_i </span></p>
+<blockquote>
+<p>Basically, a deterministic straight line equation <span class="math inline">y=c+mx</span>, with added random variation that is normally distributed</p>
+</blockquote>
+<p><span class="math display"> Y = c + mx + \epsilon </span></p>
+</div>
+</section>
+<section id="fitting-the-line" class="slide level2">
+<h2>Fitting the line</h2>
+<p><span class="math display"> Y_i = \beta_0 + \beta_1 x_i + \epsilon_i </span></p>
+<p><span class="math display"> Y = c + mx + \epsilon </span></p>
+<p>How do we fit a line to data if data are “noisy”?</p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">10</span>, <span class="dv">0</span>, <span class="dv">2</span>)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="co"># generate y with predicted values</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>y_pred <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> x</span>
+<span id="cb1-5"><a href="#cb1-5"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x, y)</span>
+<span id="cb1-6"><a href="#cb1-6"></a></span>
+<span id="cb1-7"><a href="#cb1-7"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(x, y_pred)) <span class="sc">+</span></span>
+<span id="cb1-8"><a href="#cb1-8"></a>    <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb1-9"><a href="#cb1-9"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"firebrick"</span>) <span class="sc">+</span></span>
+<span id="cb1-10"><a href="#cb1-10"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"y"</span>, <span class="at">title =</span> <span class="st">"A"</span>)</span>
+<span id="cb1-11"><a href="#cb1-11"></a></span>
+<span id="cb1-12"><a href="#cb1-12"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
+<span id="cb1-13"><a href="#cb1-13"></a>    <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb1-14"><a href="#cb1-14"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"royalblue"</span>) <span class="sc">+</span></span>
+<span id="cb1-15"><a href="#cb1-15"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"y"</span>, <span class="at">title =</span> <span class="st">"B (How do we fit this?)"</span>)</span>
+<span id="cb1-16"><a href="#cb1-16"></a></span>
+<span id="cb1-17"><a href="#cb1-17"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb1-18"><a href="#cb1-18"></a>p1 <span class="sc">+</span> p2 <span class="sc">+</span> <span class="fu">plot_layout</span>(<span class="at">ncol =</span> <span class="dv">2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"></section></section>
+<section>
+<section id="least-squares" class="title-slide slide level1 center">
+<h1>Least squares</h1>
+<blockquote>
+<p>The method of least squares is the <strong>automobile of modern statistical analysis</strong>: despite its limitations, ocassional accidents and incidental pollution, it and its numerous variations, extensions, and related conveyances <strong>carry the bulk of statistical analyses</strong>, and are known and valued by nearly all.</p>
+</blockquote>
+<p>– Stigler, 1981 (emphasis added)</p>
+</section>
+<section id="usage" class="slide level2">
+<h2>Usage</h2>
+<ul>
+<li><strong>Student’s t-test</strong></li>
+<li><strong>linear regression</strong></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>ANOVA</li>
+<li>logistic regression</li>
+<li>nonlinear regression</li>
+<li>ridge regression</li>
+<li>lasso regression</li>
+<li>principle component analysis</li>
+<li>generalised linear model</li>
+<li>etc…</li>
+</ul>
+</div>
+</section>
+<section id="galtons-data-revisited" class="slide level2">
+<h2>Galton’s data revisited</h2>
+<ul>
+<li>Galton’s data on the heights of parents and their children.</li>
+<li>Is there a relationship between the heights of parents and their children?</li>
+</ul>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(HistData)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">data</span>(Galton)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">ggplot</span>(Galton, <span class="fu">aes</span>(<span class="at">x =</span> parent, <span class="at">y =</span> child)) <span class="sc">+</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"firebrick"</span>) <span class="sc">+</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Parent height (inches)"</span>, <span class="at">y =</span> <span class="st">"Child height (inches)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p><strong>How did we end up with the line in the plot above?</strong></p>
+</section></section>
+<section>
+<section id="fitting-the-model" class="title-slide slide level1 center">
+<h1>Fitting the model</h1>
+
+</section>
+<section id="how-do-we-fit-a-line" class="slide level2">
+<h2>How do we fit a line?</h2>
+<ul>
+<li><em>Minimise</em> the sum of the squared residuals:</li>
+</ul>
+<p><span class="math display">\color{firebrick}{argmin_{\beta_0, \beta_1}} \sum_{i=1}^n (y_i - \color{royalblue}{(\beta_0 + \beta_1 x_i)})^2</span></p>
+
+<img data-src="images/leastsquares.gif" class="r-stretch quarto-figure-center"><p class="caption"><a href="https://github.com/Enchufa2/ls-springs">Source</a></p></section>
+<section id="residuals-hat-epsilon" class="slide level2">
+<h2>Residuals, <span class="math inline">\hat \epsilon</span></h2>
+<p><span class="math display"> \color{firebrick}{\hat{\epsilon_i}} = \color{royalblue}{y_i} - \color{forestgreen}{\hat{y_i}} </span></p>
+<div class="fragment">
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># simulate example data</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="fu">set.seed</span>(<span class="dv">340</span>)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>x <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">8</span>, <span class="dv">0</span>, <span class="dv">30</span>)</span>
+<span id="cb3-4"><a href="#cb3-4"></a>y <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">8</span>, <span class="dv">0</span>, <span class="dv">40</span>)</span>
+<span id="cb3-5"><a href="#cb3-5"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x, y)</span>
+<span id="cb3-6"><a href="#cb3-6"></a></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="co"># fit linear model, add residual vertical lines as arrows</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>mod <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> df)</span>
+<span id="cb3-9"><a href="#cb3-9"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(x, y)) <span class="sc">+</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>    <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">xend =</span> x, <span class="at">yend =</span> <span class="fu">fitted</span>(mod)),</span>
+<span id="cb3-12"><a href="#cb3-12"></a>        <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length =</span> <span class="fu">unit</span>(<span class="fl">0.2</span>, <span class="st">"cm"</span>)),</span>
+<span id="cb3-13"><a href="#cb3-13"></a>        <span class="at">color =</span> <span class="st">"royalblue"</span></span>
+<span id="cb3-14"><a href="#cb3-14"></a>    ) <span class="sc">+</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"x"</span>, <span class="at">y =</span> <span class="st">"y"</span>)</span>
+<span id="cb3-16"><a href="#cb3-16"></a></span>
+<span id="cb3-17"><a href="#cb3-17"></a>p1 <span class="sc">+</span></span>
+<span id="cb3-18"><a href="#cb3-18"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"firebrick"</span>) <span class="sc">+</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb3-20"><a href="#cb3-20"></a>        <span class="at">x =</span> <span class="fl">6.3</span>, <span class="at">y =</span> <span class="sc">-</span><span class="dv">6</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb3-21"><a href="#cb3-21"></a>        <span class="at">label =</span> <span class="fu">expression</span>(<span class="fu">hat</span>(epsilon[i])), <span class="at">colour =</span> <span class="st">"royalblue"</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a>    ) <span class="sc">+</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb3-24"><a href="#cb3-24"></a>        <span class="at">x =</span> <span class="fl">5.6</span>, <span class="at">y =</span> <span class="dv">25</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb3-25"><a href="#cb3-25"></a>        <span class="at">label =</span> <span class="fu">expression</span>(<span class="fu">hat</span>(y[i])), <span class="at">colour =</span> <span class="st">"forestgreen"</span></span>
+<span id="cb3-26"><a href="#cb3-26"></a>    ) <span class="sc">+</span></span>
+<span id="cb3-27"><a href="#cb3-27"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb3-28"><a href="#cb3-28"></a>        <span class="at">x =</span> <span class="fl">5.6</span>, <span class="at">y =</span> <span class="sc">-</span><span class="dv">36</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb3-29"><a href="#cb3-29"></a>        <span class="at">label =</span> <span class="fu">expression</span>(y[i]), <span class="at">colour =</span> <span class="st">"firebrick"</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<p><img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-3-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="slope-beta_1" class="slide level2">
+<h2>Slope, <span class="math inline">\beta_1</span></h2>
+<!-- $$ Y_i = \beta_0 + \beta_1 x_i + \epsilon_i $$ -->
+<p><span class="math display"> \beta_1 = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2} =  \frac{Cov(x,y)}{Var(x)} = \frac{SS_{xy}}{SS_{xx}} </span></p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Calculate slope from df</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>beta1 <span class="ot">&lt;-</span> <span class="fu">sum</span>((df<span class="sc">$</span>x <span class="sc">-</span> <span class="fu">mean</span>(df<span class="sc">$</span>x)) <span class="sc">*</span> (df<span class="sc">$</span>y <span class="sc">-</span> <span class="fu">mean</span>(df<span class="sc">$</span>y))) <span class="sc">/</span></span>
+<span id="cb4-3"><a href="#cb4-3"></a>    <span class="fu">sum</span>((df<span class="sc">$</span>x <span class="sc">-</span> <span class="fu">mean</span>(df<span class="sc">$</span>x))<span class="sc">^</span><span class="dv">2</span>)</span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># beta0 &lt;- mean(df$y) - beta1 * mean(df$x)</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a></span>
+<span id="cb4-6"><a href="#cb4-6"></a>p1 <span class="sc">+</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"firebrick"</span>, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb4-8"><a href="#cb4-8"></a>    <span class="co"># label the line</span></span>
+<span id="cb4-9"><a href="#cb4-9"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb4-10"><a href="#cb4-10"></a>        <span class="at">x =</span> <span class="dv">15</span>, <span class="at">y =</span> <span class="dv">65</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb4-11"><a href="#cb4-11"></a>        <span class="at">label =</span> <span class="fu">expression</span>(beta[<span class="dv">1</span>]), <span class="at">colour =</span> <span class="st">"firebrick"</span></span>
+<span id="cb4-12"><a href="#cb4-12"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<!-- $$ \beta_0 = \bar{y} - \beta_1 \bar{x} $$ -->
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-4-1.png" width="960" class="r-stretch"></section>
+<section id="intercept" class="slide level2">
+<h2>Intercept</h2>
+<p><span class="math display"> \beta_0 = \bar{y} - \beta_1 \bar{x} </span></p>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># calculate mean y from df</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>ybar <span class="ot">&lt;-</span> <span class="fu">mean</span>(df<span class="sc">$</span>y)</span>
+<span id="cb5-3"><a href="#cb5-3"></a>xbar <span class="ot">&lt;-</span> <span class="fu">mean</span>(df<span class="sc">$</span>x)</span>
+<span id="cb5-4"><a href="#cb5-4"></a>beta0 <span class="ot">&lt;-</span> ybar <span class="sc">-</span> beta1 <span class="sc">*</span> xbar</span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a>p1 <span class="sc">+</span> <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> xbar, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"slateblue"</span>) <span class="sc">+</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a>    <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> ybar, <span class="at">linetype =</span> <span class="st">"dashed"</span>, <span class="at">color =</span> <span class="st">"slateblue"</span>) <span class="sc">+</span></span>
+<span id="cb5-8"><a href="#cb5-8"></a>    <span class="co"># label the lines</span></span>
+<span id="cb5-9"><a href="#cb5-9"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb5-10"><a href="#cb5-10"></a>        <span class="at">x =</span> <span class="dv">25</span>, <span class="at">y =</span> ybar <span class="sc">*</span> <span class="fl">0.8</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb5-11"><a href="#cb5-11"></a>        <span class="at">label =</span> <span class="fu">expression</span>(<span class="fu">bar</span>(y)), <span class="at">colour =</span> <span class="st">"slateblue"</span></span>
+<span id="cb5-12"><a href="#cb5-12"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-13"><a href="#cb5-13"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb5-14"><a href="#cb5-14"></a>        <span class="at">x =</span> xbar <span class="sc">*</span> <span class="fl">1.05</span>, <span class="at">y =</span> <span class="dv">150</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb5-15"><a href="#cb5-15"></a>        <span class="at">label =</span> <span class="fu">expression</span>(<span class="fu">bar</span>(x)), <span class="at">colour =</span> <span class="st">"slateblue"</span></span>
+<span id="cb5-16"><a href="#cb5-16"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-17"><a href="#cb5-17"></a>    <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"firebrick"</span>, <span class="at">linetype =</span> <span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a>    <span class="co"># extend the geom_smooth line to intercept x=0</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a>    <span class="fu">geom_segment</span>(<span class="fu">aes</span>(<span class="at">x =</span> xbar, <span class="at">y =</span> ybar, <span class="at">xend =</span> <span class="dv">0</span>, <span class="at">yend =</span> beta0),</span>
+<span id="cb5-20"><a href="#cb5-20"></a>        <span class="at">color =</span> <span class="st">"firebrick"</span>, <span class="at">linetype =</span> <span class="dv">2</span></span>
+<span id="cb5-21"><a href="#cb5-21"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-22"><a href="#cb5-22"></a>    <span class="co"># label the slope line</span></span>
+<span id="cb5-23"><a href="#cb5-23"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb5-24"><a href="#cb5-24"></a>        <span class="at">x =</span> <span class="dv">15</span>, <span class="at">y =</span> <span class="dv">65</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb5-25"><a href="#cb5-25"></a>        <span class="at">label =</span> <span class="fu">expression</span>(beta[<span class="dv">1</span>]), <span class="at">colour =</span> <span class="st">"firebrick"</span></span>
+<span id="cb5-26"><a href="#cb5-26"></a>    ) <span class="sc">+</span></span>
+<span id="cb5-27"><a href="#cb5-27"></a>    <span class="co"># add a dot at the intercept</span></span>
+<span id="cb5-28"><a href="#cb5-28"></a>    <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> beta0), <span class="at">color =</span> <span class="st">"seagreen"</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb5-29"><a href="#cb5-29"></a>    <span class="co"># label the intercept</span></span>
+<span id="cb5-30"><a href="#cb5-30"></a>    <span class="fu">annotate</span>(<span class="st">"text"</span>,</span>
+<span id="cb5-31"><a href="#cb5-31"></a>        <span class="at">x =</span> <span class="dv">0</span>, <span class="at">y =</span> beta0 <span class="sc">*</span> <span class="fl">1.4</span>, <span class="at">size =</span> <span class="dv">7</span>,</span>
+<span id="cb5-32"><a href="#cb5-32"></a>        <span class="at">label =</span> <span class="fu">expression</span>(beta[<span class="dv">0</span>]), <span class="at">colour =</span> <span class="st">"seagreen"</span></span>
+<span id="cb5-33"><a href="#cb5-33"></a>    )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-5-1.png" width="960" class="r-stretch"></section></section>
+<section>
+<section id="its-a-lot-easier-in-r" class="title-slide slide level1 center">
+<h1>It’s a lot easier in R…</h1>
+
+</section>
+<section id="fitting-a-linear-model-in-r" class="slide level2">
+<h2>Fitting a linear model in R</h2>
+<p>Is there a relationship between the heights of parents and their children?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb6-2"><a href="#cb6-2"></a>fit</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = child ~ parent, data = Galton)
+
+Coefficients:
+(Intercept)       parent  
+    23.9415       0.6463  </code></pre>
+</div>
+</div>
+<p><span class="math display"> \widehat{child} = 23.9 + 0.646 \cdot parent</span></p>
+<div class="fragment">
+<p>But is the model any good?</p>
+</div>
+</section></section>
+<section>
+<section id="assessing-model-fit" class="title-slide slide level1 center">
+<h1>Assessing model fit</h1>
+
+</section>
+<section id="assumptions" class="slide level2">
+<h2>Assumptions</h2>
+<p>The data <strong>must</strong> meet certain criteria, which we often call <em>assumptions</em>. They can be remembered using <strong>LINE</strong>:</p>
+<ul>
+<li><strong>L</strong>inearity. The relationship between <span class="math inline">y</span> and <span class="math inline">x</span> is linear.</li>
+<li><strong>I</strong>ndependence. The errors <span class="math inline">\epsilon</span> are independent.</li>
+<li><strong>N</strong>ormal. The errors <span class="math inline">\epsilon</span> are normally distributed.</li>
+<li><strong>E</strong>qual Variance. At each value of <span class="math inline">x</span>, the variance of <span class="math inline">y</span> is the same i.e.&nbsp;homoskedasticity, or constant variance.</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
 <div class="callout-body">
 <div class="callout-title">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
-<p><strong>Important</strong></p>
+<p><strong>Tip</strong></p>
 </div>
 <div class="callout-content">
-<p>This template is on a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. If you choose to use this template, please attribute the source. You may also share your work under the same license. For example:</p>
-<blockquote>
-<p>This presentation is based on the <a href="https://github.com/usyd-soles-edu/soles-revealjs">SOLES reveal.js Quarto template</a> and is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
-</blockquote>
-<p>Note that you do <strong>not</strong> need to license your presentation under cc-by 4.0. You can choose a different license, or no license at all. <strong>The only requirement is that you attribute the source.</strong></p>
+<p>All but the independence assumption can be assessed using diagnostic plots.</p>
+</div>
 </div>
 </div>
 </div>
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>A <strong>technical writing</strong> system that produces <em>reproducible</em>, <em>versioned</em>, and <em>extensible</em> documents – the next generation of <a href="https://rmarkdown.rstudio.com/"><strong>R Markdown</strong></a>.</p>
+<section id="assumptions-why-do-we-care" class="slide level2">
+<h2>Assumptions: Why do we care?</h2>
+<ul>
+<li>If the assumptions are met, then we can be confident that the model is a good representation of the data.</li>
+<li>If they are <em>not</em> met, the results are still presented, but our interpretation of the model is likely to be flawed.</li>
+</ul>
+<div class="fragment">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Warning</strong></p>
+</div>
+<div class="callout-content">
+<p>R will not warn you if the assumptions are not met. It is up to you to check them!</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="how-do-we-check-the-assumptions" class="slide level2">
+<h2>How do we check the assumptions?</h2>
+<p>Recall that the linear model is a <strong>deterministic straight line equation</strong> <span class="math inline">y = c + mx</span> plus some <strong>random noise</strong> <span class="math inline">\epsilon</span>:</p>
+<p><span class="math display"> Y_i = \beta_0 + \beta_1 x + \epsilon </span></p>
+<ul>
+<li><strong>If the only source of variation in <span class="math inline">y</span> is <span class="math inline">\epsilon</span>, then we can check our assumptions by just looking at the residuals <span class="math inline">\hat{\epsilon}</span>.</strong></li>
+</ul>
+<h3 id="how-do-we-get-the-residuals">How do we get the residuals?</h3>
+<ul>
+<li>Fit the model…</li>
+<li>Residuals need to be calculated from the model, not from the raw data.</li>
+<li>In R, these values are stored automatically.</li>
+</ul>
+</section>
+<section id="another-way-to-look-at-residuals" class="slide level2">
+<h2>Another way to look at residuals</h2>
 
-<img data-src="images/quarto.jpeg" class="r-stretch"></section>
-<section id="features-html" class="slide level2">
-<h2>Features (HTML)</h2>
-<p>Follows the <strong>University of Sydney</strong> brand guidelines.</p>
-<ul>
-<li><strong>Logos</strong> - Primary logo on the title slide (black), and secondary horizontal logo on all other slides.</li>
-<li><strong>Fonts</strong> - <em>Source Sans Pro</em>, otherwise, <em>Times New Roman</em> (official alternate fonts to <em>Apercu Pro</em> and <em>Lyon Display</em>).</li>
-<li><strong>Colours</strong> - Uses the official University of Sydney colours <span style="color:#e64626"><strong>Ochre</strong></span>, <span style="color:#424242"><strong>Charcoal</strong></span>, <span style="color:#daa8a2"><strong>Heritage Rose</strong></span>, <span style="color:#8f9ec9"><strong>Jacaranda</strong></span> and <span style="color:#71a499"><strong>Eucalypt</strong></span>.</li>
-</ul>
-<p>Renders to multiple formats with <code>quarto render</code>:</p>
-<ul>
-<li><strong>HTML</strong> in reveal.js format</li>
-<li><strong>PDF</strong> via LaTeX</li>
-<li><strong>MS Powerpoint</strong> via Pandoc (TODO)</li>
-</ul>
-</section>
-<section id="pdf-output-is-not-11" class="slide level2">
-<h2>PDF output is not 1:1</h2>
-<p>The default PDF render is not 1:1 with the HTML output. To handle this, you can the following:</p>
-<ol type="1">
-<li>You <strong>must</strong> have Chrome, or a Chromium-based browser installed.</li>
-<li>Open the HTML output in Chrome.</li>
-<li>Press the <code>E</code> key to enter print mode.</li>
-<li>Print to PDF using <code>ctrl</code> + <code>p</code> (Windows) or <code>cmd</code> + <code>p</code> (macOS).</li>
-</ol>
+<img data-src="images/residual.jpg" class="r-stretch quarto-figure-center"><p>Once you have fitted the line, it does not change. The residuals are the vertical distances between the points (not shown) and the line.</p>
 </section></section>
 <section>
-<section id="quick-start" class="title-slide slide level1 center">
-<h1>Quick start</h1>
+<section id="checking-assumptions" class="title-slide slide level1 center">
+<h1>Checking assumptions</h1>
+<p>linearty | normality | equal variance | outliers</p>
+</section>
+<section id="step" class="slide level2">
+<h2>1-step</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>)) <span class="co"># need to do this to get 4 plots on one page</span></span>
+<span id="cb8-2"><a href="#cb8-2"></a><span class="fu">plot</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
-</section>
-<section id="installing-quarto" class="slide level2">
-<h2>Installing Quarto</h2>
-<p>Quarto is available for Windows, macOS, and Linux. See <a href="https://quarto.org/docs/getting-started/installation.html">installation instructions</a>.</p>
-<h3 id="recommendation">Recommendation</h3>
-<p><a href="https://code.visualstudio.com/"><strong>Visual Studio Code</strong></a> is recommended as the editor for Quarto. It is free, open-source, and has a lot of extensions that can be used to enhance the writing experience.</p>
-<h3 id="however">However…</h3>
-<p>Users familiar with <a href="https://posit.co/">RStudio</a> can also use it to write Quarto documents. See <a href="https://quarto.org/docs/get-started/hello/rstudio.html">here</a> for more information.</p>
-</section>
-<section id="installing-this-template" class="slide level2">
-<h2>Installing this template</h2>
-<p>There are three (3) ways:</p>
-<h3 id="recommended-use-the-quarto-cli">1. Recommended: Use the Quarto CLI</h3>
-<p>With the <a href="https://quarto.org/docs/getting-started/installation.html#installing-the-quarto-cli"><strong>Quarto CLI</strong></a> installed, run the following command in your terminal and follow the instructions:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource sh number-lines code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="ex">quarto</span> use template usyd-soles-edu/soles-revealjs</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<h3 id="download-the-template-directly">2. Download the template directly</h3>
-<p>You can download the template folder directly from GitHub, ready to use. Go to the <a href="https://github.com/usyd-soles-edu/soles-revealjs">repository</a> and click on “&lt; &gt; Code”, then “Download ZIP”. Once you unzip the folder.</p>
-<h3 id="clone-the-template-repository">3. Clone the template repository</h3>
-<p>Go to the <a href="https://github.com/usyd-soles-edu/soles-revealjs">repository</a> and click on “Use this template”. Note that you will need to be familiar with Git and GitHub to use this method.</p>
-</section>
-<section id="editing-the-template" class="slide level2">
-<h2>Editing the template</h2>
-<p>All written content is in the <code>template.qmd</code> file. You may rename this file to whatever you like.</p>
-<h3 id="html-output">HTML output</h3>
-<p>Slides that are generated from this template are in HTML format. You can view the slides by opening the <code>.html</code> file in your browser. This file is generated in the same folder as the <code>.qmd</code> file.</p>
-</section>
-<section id="markdown" class="slide level2">
-<h2>Markdown</h2>
-<h3 id="flavour">Flavour</h3>
-<p>Quarto uses <a href="https://quarto.org/docs/authoring/markdown-basics.html"><strong>Pandoc-flavoured Markdown</strong></a> for text formatting.</p>
-<h3 id="formatting">Formatting</h3>
-<p><strong>Bold</strong> and <em>italic</em>. <code>Inline code</code>. What about a <a href="https://quarto.org">link</a>? And a footnote<sup>1</sup>? We can also use subscript<sub>s</sub> and superscript<sup>s</sup>.</p>
-<h3 id="lists">Lists</h3>
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-7-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
 <ul>
-<li>Lists <strong>must</strong> be preceded by a blank line.</li>
-<li>We can also created nested lists:
-<ol type="1">
-<li>This list is ordered.</li>
-<li>This list is also nexted.</li>
-</ol></li>
+<li><strong>Residuals vs.&nbsp;Fitted</strong>: check for linearity, equal variance.</li>
+<li><strong>Q-Q Residuals</strong>: check for normality.</li>
+<li><strong>Scale-Location</strong>: check for equal variance (standardised).</li>
+<li><strong>Residuals vs.&nbsp;Leverage</strong>: check for outliers (influential points).</li>
 </ul>
-<aside><ol class="aside-footnotes"><li id="fn1"><p>This is a footnote.</p></li></ol></aside></section></section>
+
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-8-1.png" width="960" class="r-stretch"></section>
+<section id="assumption-linearity" class="slide level2">
+<h2>Assumption: Linearity</h2>
+<ul>
+<li>Residuals vs.&nbsp;fitted plot looks at the relationship between the residuals and the fitted values.</li>
+<li>If the relationship is linear:
+<ul>
+<li>Residuals should be randomly scattered around the horizontal axis.</li>
+<li>The red line should be reasonably straight.</li>
+</ul></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="fu">plot</span>(fit, <span class="at">which =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-9-1.png" width="960" class="r-stretch"></section>
+<section id="assumption-normality" class="slide level2">
+<h2>Assumption: Normality</h2>
+<ul>
+<li>Q-Q plot looks at the distribution of the residuals against a normal distribution function (the dotted line).</li>
+<li>Sometimes, a histogram is still useful to see the shape of the distribution.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb10-2"><a href="#cb10-2"></a><span class="fu">plot</span>(fit, <span class="at">which =</span> <span class="dv">2</span>)</span>
+<span id="cb10-3"><a href="#cb10-3"></a><span class="fu">hist</span>(<span class="fu">rstandard</span>(fit))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
+<section id="assumption-normality-1" class="slide level2">
+<h2>Assumption: Normality</h2>
+<ul>
+<li>If <strong>normally distributed</strong>, the points should follow the red line.</li>
+<li>Deviation from the red line is common in the tails (i.e.&nbsp;the ends), but not in the middle.</li>
+</ul>
+<div class="fragment">
+<h3 id="tips">Tips</h3>
+<ul>
+<li><strong>Light-tailed</strong>: small variance in residuals, resulting in a narrow distribution.</li>
+<li><strong>Heavy-tailed</strong>: many extreme positive and negative residuals, resulting in a wide distribution.</li>
+<li><strong>Left-skewed</strong> (n shape): more data falls to the left of the mean.</li>
+<li><strong>Right-skewed</strong> (u shape): more data falls to the right of the mean.</li>
+</ul>
+</div>
+</section></section>
 <section>
-<section id="advanced-features" class="title-slide slide level1 center">
-<h1>Advanced features</h1>
+<section id="practice" class="title-slide slide level1 center">
+<h1>Practice</h1>
 
 </section>
-<section id="reproducible-workflows" class="slide level2">
-<h2>Reproducible workflows</h2>
-<p>The advantage of Quarto over traditional slide software is that it allows code and output to be embedded in the document. This means that you can create a document that is <strong>reproducible</strong> and <strong>versioned</strong>.</p>
-<p>For example, the source of this slide is in the <code>template.qmd</code> file.</p>
-</section>
-<section id="code-example-1" class="slide level2">
-<h2>Code example 1</h2>
-<p>Using R, we show how to fit a linear regression model and print the model summary. Click on the code dropdown to see the code.</p>
+<section id="section" class="slide level2">
+<h2></h2>
 <div class="cell">
 <details>
 <summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># fit a linear regression model</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(mpg <span class="sc">~</span> wt, <span class="at">data =</span> mtcars)</span>
-<span id="cb2-3"><a href="#cb2-3"></a><span class="co"># print the model summary</span></span>
-<span id="cb2-4"><a href="#cb2-4"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="fu">set.seed</span>(<span class="dv">915</span>)</span>
+<span id="cb11-2"><a href="#cb11-2"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb11-3"><a href="#cb11-3"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">5</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="fu">rchisq</span>(<span class="dv">100</span>, <span class="at">df =</span> <span class="dv">2</span>)</span>
+<span id="cb11-4"><a href="#cb11-4"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x, y)</span>
+<span id="cb11-5"><a href="#cb11-5"></a>fit_eg <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> df)</span>
+<span id="cb11-6"><a href="#cb11-6"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb11-7"><a href="#cb11-7"></a><span class="fu">plot</span>(fit_eg, <span class="at">which =</span> <span class="dv">2</span>)</span>
+<span id="cb11-8"><a href="#cb11-8"></a><span class="fu">hist</span>(<span class="fu">rstandard</span>(fit_eg))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-11-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1"></a><span class="fu">set.seed</span>(<span class="dv">1028</span>)</span>
+<span id="cb12-2"><a href="#cb12-2"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb12-3"><a href="#cb12-3"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">5</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="fu">rchisq</span>(<span class="dv">100</span>, <span class="at">df =</span> <span class="dv">3</span>) <span class="sc">*</span> <span class="sc">-</span><span class="dv">1</span></span>
+<span id="cb12-4"><a href="#cb12-4"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x, y)</span>
+<span id="cb12-5"><a href="#cb12-5"></a>fit_eg <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> df)</span>
+<span id="cb12-6"><a href="#cb12-6"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb12-7"><a href="#cb12-7"></a><span class="fu">plot</span>(fit_eg, <span class="at">which =</span> <span class="dv">2</span>)</span>
+<span id="cb12-8"><a href="#cb12-8"></a><span class="fu">hist</span>(<span class="fu">rstandard</span>(fit_eg))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-12-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a><span class="fu">set.seed</span>(<span class="dv">1028</span>)</span>
+<span id="cb13-2"><a href="#cb13-2"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb13-3"><a href="#cb13-3"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">5</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="fu">rnbinom</span>(<span class="dv">100</span>, <span class="dv">10</span>, .<span class="dv">5</span>)</span>
+<span id="cb13-4"><a href="#cb13-4"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x, y)</span>
+<span id="cb13-5"><a href="#cb13-5"></a>fit_eg <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> df)</span>
+<span id="cb13-6"><a href="#cb13-6"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb13-7"><a href="#cb13-7"></a><span class="fu">plot</span>(fit_eg, <span class="at">which =</span> <span class="dv">2</span>)</span>
+<span id="cb13-8"><a href="#cb13-8"></a><span class="fu">hist</span>(<span class="fu">rstandard</span>(fit_eg))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-13-1.png" width="960" class="r-stretch"></section></section>
+<section>
+<section id="assumption-equal-variances" class="title-slide slide level1 center">
+<h1>Assumption: Equal variances</h1>
+
+</section>
+<section id="equal-variances" class="slide level2">
+<h2>Equal variances</h2>
+<ul>
+<li>Look at the <strong>scale-location plot</strong>.</li>
+<li>If variances are equal, the points should be randomly scattered around the horizontal axis.</li>
+<li>The red line should be more or less horizontal.</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">plot</span>(fit, <span class="at">which =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-14-1.png" width="960" class="r-stretch"></section>
+<section id="equal-variances-1" class="slide level2">
+<h2>Equal variances</h2>
+<ul>
+<li>If variances are not equal we <em>may</em> see:
+<ul>
+<li>A funnel shape, where the points are more spread out at the ends than in the middle. Sometimes also called “fanning”.</li>
+<li>Patterns in the scale-location plot, such as a curve or a wave, indicating that the variance is changing.</li>
+</ul></li>
+<li>Look at the red line for a general trend, <strong>but don’t depend on it too much</strong>.</li>
+</ul>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">set.seed</span>(<span class="dv">915</span>)</span>
+<span id="cb15-2"><a href="#cb15-2"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb15-3"><a href="#cb15-3"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">5</span> <span class="sc">*</span> x<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">rchisq</span>(<span class="dv">100</span>, <span class="at">df =</span> <span class="dv">2</span>)</span>
+<span id="cb15-4"><a href="#cb15-4"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x, y)</span>
+<span id="cb15-5"><a href="#cb15-5"></a>fit_eg <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> df)</span>
+<span id="cb15-6"><a href="#cb15-6"></a><span class="fu">plot</span>(fit_eg, <span class="at">which =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-15-1.png" width="960" class="r-stretch"></section>
+<section id="outliers" class="slide level2">
+<h2>Outliers</h2>
+<ul>
+<li><strong>Leverage</strong> is a measure of how far away the predictor variable is from the mean of the predictor variable.</li>
+<li>The Residuals vs Leverage plot shows the relationship between the residuals and the leverage of each point.</li>
+<li><strong>Cook’s distance</strong> is a measure of how much the model would change if a point was removed.</li>
+</ul>
+</section>
+<section class="slide level2">
+
+<p>In general, points with <strong>high leverage</strong> and <strong>high Cook’s distance</strong> are considered outliers.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1"></a><span class="fu">plot</span>(fit, <span class="at">which =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-16-1.png" width="960" class="r-stretch"></section>
+<section class="slide level2">
+
+<h3 id="example-of-an-influential-outlier">Example of an influential outlier</h3>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a><span class="fu">set.seed</span>(<span class="dv">1028</span>)</span>
+<span id="cb17-2"><a href="#cb17-2"></a>x <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(<span class="dv">100</span>)</span>
+<span id="cb17-3"><a href="#cb17-3"></a>y <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">+</span> <span class="dv">5</span> <span class="sc">*</span> x <span class="sc">+</span> <span class="fu">rnbinom</span>(<span class="dv">100</span>, <span class="dv">10</span>, .<span class="dv">5</span>)</span>
+<span id="cb17-4"><a href="#cb17-4"></a>y[<span class="dv">60</span>] <span class="ot">&lt;-</span> y[<span class="dv">60</span>] <span class="sc">+</span> <span class="dv">30</span></span>
+<span id="cb17-5"><a href="#cb17-5"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(x, y)</span>
+<span id="cb17-6"><a href="#cb17-6"></a><span class="co"># Add an outlier</span></span>
+<span id="cb17-7"><a href="#cb17-7"></a>fit_eg <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> df)</span>
+<span id="cb17-8"><a href="#cb17-8"></a><span class="fu">plot</span>(fit_eg, <span class="at">which =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-17-1.png" width="960" class="r-stretch"><p>We don’t want points to exceed the dashed line (which appears once they approach the Cook’s distance), because that means they are likely to influence the model greatly.</p>
+</section></section>
+<section>
+<section id="handling-violations" class="title-slide slide level1 center">
+<h1>Handling violations</h1>
+
+</section>
+<section id="what-can-we-do" class="slide level2">
+<h2>What can we do?</h2>
+<ul>
+<li>Depends on the violation and the type of data i.e.&nbsp;circumstances.
+<ul>
+<li>If data is <strong>non-linear</strong>, try a transformation of the response variable <span class="math inline">y</span>, from light to extreme:
+<ul>
+<li>root: <span class="math inline">\sqrt{y}</span> or <span class="math inline">\sqrt{y+1}</span> if <span class="math inline">y</span> contains zeros</li>
+<li>log: <span class="math inline">\log(y)</span> or <span class="math inline">\log(y+1)</span> if <span class="math inline">y</span> contains zeros</li>
+<li>inverse: <span class="math inline">\frac{1}{y}</span> or <span class="math inline">\frac{1}{y+1}</span> if <span class="math inline">y</span> contains zeros</li>
+</ul></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li>If data is <strong>not normally distributed</strong>, try a transformation of the response variable <span class="math inline">y</span> first, otherwise transform the predictor variable <span class="math inline">x</span>. Both can be done at the same time.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>If <strong>equal variances</strong> assumption is violated, same as above.</li>
+<li>If <strong>outliers</strong> are present, try removing them, or transforming the response variable <span class="math inline">y</span>.</li>
+</ul>
+</div>
+</section>
+<section id="what-if-that-doesnt-work" class="slide level2">
+<h2>What if that doesn’t work?</h2>
+<ul>
+<li>If the assumptions are still violated after trying the above, you can try:
+<ul>
+<li>Using a different model e.g.&nbsp;generalized linear model.</li>
+<li>Using a different type of regression e.g.&nbsp;logistic regression.</li>
+<li>Using a non-parametric test.</li>
+</ul></li>
+</ul>
+<h3 id="model-assumptions-validated.-now-what">Model assumptions validated. Now what?</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="fu">summary</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 Call:
-lm(formula = mpg ~ wt, data = mtcars)
+lm(formula = child ~ parent, data = Galton)
 
 Residuals:
     Min      1Q  Median      3Q     Max 
--4.5432 -2.3647 -0.1252  1.4096  6.8727 
+-7.8050 -1.3661  0.0487  1.6339  5.9264 
 
 Coefficients:
             Estimate Std. Error t value Pr(&gt;|t|)    
-(Intercept)  37.2851     1.8776  19.858  &lt; 2e-16 ***
-wt           -5.3445     0.5591  -9.559 1.29e-10 ***
+(Intercept) 23.94153    2.81088   8.517   &lt;2e-16 ***
+parent       0.64629    0.04114  15.711   &lt;2e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
-Residual standard error: 3.046 on 30 degrees of freedom
-Multiple R-squared:  0.7528,    Adjusted R-squared:  0.7446 
-F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
+Residual standard error: 2.239 on 926 degrees of freedom
+Multiple R-squared:  0.2105,    Adjusted R-squared:  0.2096 
+F-statistic: 246.8 on 1 and 926 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</section></section>
+<section>
+<section id="inference" class="title-slide slide level1 center">
+<h1>Inference</h1>
+<p>What can we say about the model based on our data?</p>
+<blockquote>
+<p>What can we understand about the relationship between <code>child</code> and <code>parent</code>?</p>
+</blockquote>
+</section>
+<section id="the-model-so-far" class="slide level2">
+<h2>The model so far</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="fu">library</span>(HistData)</span>
+<span id="cb20-2"><a href="#cb20-2"></a><span class="fu">data</span>(Galton)</span>
+<span id="cb20-3"><a href="#cb20-3"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb20-4"><a href="#cb20-4"></a><span class="fu">summary</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = child ~ parent, data = Galton)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.8050 -1.3661  0.0487  1.6339  5.9264 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 23.94153    2.81088   8.517   &lt;2e-16 ***
+parent       0.64629    0.04114  15.711   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.239 on 926 degrees of freedom
+Multiple R-squared:  0.2105,    Adjusted R-squared:  0.2096 
+F-statistic: 246.8 on 1 and 926 DF,  p-value: &lt; 2.2e-16</code></pre>
 </div>
 </div>
 </section>
-<section id="code-example-2" class="slide level2">
-<h2>Code example 2</h2>
+<section id="hypothesis-testing" class="slide level2">
+<h2>Hypothesis testing</h2>
+<p>How does our null (<span class="math inline">H_0: \beta_1=0</span>) model compare to the linear (<span class="math inline">H_0: \beta_1 \neq 0</span>) model?</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb4-2"><a href="#cb4-2"></a><span class="co"># plot a very nice plot based on iris dataset</span></span>
-<span id="cb4-3"><a href="#cb4-3"></a><span class="fu">ggplot</span>(iris, <span class="fu">aes</span>(<span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">color =</span> Species)) <span class="sc">+</span></span>
-<span id="cb4-4"><a href="#cb4-4"></a>    <span class="fu">geom_point</span>() <span class="sc">+</span></span>
-<span id="cb4-5"><a href="#cb4-5"></a>    <span class="fu">theme_minimal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a>null_model <span class="ot">&lt;-</span> Galton <span class="sc">%&gt;%</span></span>
+<span id="cb22-2"><a href="#cb22-2"></a>    <span class="fu">lm</span>(child <span class="sc">~</span> <span class="dv">1</span>, <span class="at">data =</span> .) <span class="sc">%&gt;%</span></span>
+<span id="cb22-3"><a href="#cb22-3"></a>    <span class="fu">augment</span>(Galton)</span>
+<span id="cb22-4"><a href="#cb22-4"></a>lin_model <span class="ot">&lt;-</span> Galton <span class="sc">%&gt;%</span></span>
+<span id="cb22-5"><a href="#cb22-5"></a>    <span class="fu">lm</span>(child <span class="sc">~</span> parent, <span class="at">data =</span> .) <span class="sc">%&gt;%</span></span>
+<span id="cb22-6"><a href="#cb22-6"></a>    <span class="fu">augment</span>(Galton)</span>
+<span id="cb22-7"><a href="#cb22-7"></a>models <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(null_model, lin_model) <span class="sc">%&gt;%</span></span>
+<span id="cb22-8"><a href="#cb22-8"></a>    <span class="fu">mutate</span>(<span class="at">model =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="st">"Null model"</span>, <span class="st">"SLR model"</span>), <span class="at">each =</span> <span class="fu">nrow</span>(Galton)))</span>
+<span id="cb22-9"><a href="#cb22-9"></a></span>
+<span id="cb22-10"><a href="#cb22-10"></a><span class="fu">ggplot</span>(<span class="at">data =</span> models, <span class="fu">aes</span>(<span class="at">x =</span> parent, <span class="at">y =</span> child)) <span class="sc">+</span></span>
+<span id="cb22-11"><a href="#cb22-11"></a>    <span class="fu">geom_smooth</span>(</span>
+<span id="cb22-12"><a href="#cb22-12"></a>        <span class="at">data =</span> <span class="fu">filter</span>(models, model <span class="sc">==</span> <span class="st">"Null model"</span>),</span>
+<span id="cb22-13"><a href="#cb22-13"></a>        <span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">formula =</span> y <span class="sc">~</span> <span class="dv">1</span>, <span class="at">size =</span> <span class="fl">0.5</span></span>
+<span id="cb22-14"><a href="#cb22-14"></a>    ) <span class="sc">+</span></span>
+<span id="cb22-15"><a href="#cb22-15"></a>    <span class="fu">geom_smooth</span>(</span>
+<span id="cb22-16"><a href="#cb22-16"></a>        <span class="at">data =</span> <span class="fu">filter</span>(models, model <span class="sc">==</span> <span class="st">"SLR model"</span>),</span>
+<span id="cb22-17"><a href="#cb22-17"></a>        <span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">formula =</span> y <span class="sc">~</span> x, <span class="at">size =</span> <span class="fl">0.5</span></span>
+<span id="cb22-18"><a href="#cb22-18"></a>    ) <span class="sc">+</span></span>
+<span id="cb22-19"><a href="#cb22-19"></a>    <span class="fu">geom_segment</span>(</span>
+<span id="cb22-20"><a href="#cb22-20"></a>        <span class="fu">aes</span>(<span class="at">xend =</span> parent, <span class="at">yend =</span> .fitted),</span>
+<span id="cb22-21"><a href="#cb22-21"></a>        <span class="at">arrow =</span> <span class="fu">arrow</span>(<span class="at">length =</span> <span class="fu">unit</span>(<span class="fl">0.1</span>, <span class="st">"cm"</span>)),</span>
+<span id="cb22-22"><a href="#cb22-22"></a>        <span class="at">size =</span> <span class="fl">0.3</span>, <span class="at">color =</span> <span class="st">"darkgray"</span></span>
+<span id="cb22-23"><a href="#cb22-23"></a>    ) <span class="sc">+</span></span>
+<span id="cb22-24"><a href="#cb22-24"></a>    <span class="fu">geom_point</span>(<span class="at">alpha =</span> .<span class="dv">2</span>) <span class="sc">+</span></span>
+<span id="cb22-25"><a href="#cb22-25"></a>    <span class="fu">facet_wrap</span>(<span class="sc">~</span>model) <span class="sc">+</span></span>
+<span id="cb22-26"><a href="#cb22-26"></a>    <span class="fu">xlab</span>(<span class="st">"Parent height (in)"</span>) <span class="sc">+</span></span>
+<span id="cb22-27"><a href="#cb22-27"></a>    <span class="fu">ylab</span>(<span class="st">"Child height (in)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 
 </div>
-<img data-src="template_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
-<section id="equations" class="slide level2">
-<h2>Equations</h2>
-<p>Equations are based on <a href="https://www.latex-project.org/"><strong>LaTeX</strong></a> and powered by <a href="https://quarto.org/docs/authoring/math.html"><strong>MathJax</strong></a>.</p>
-<h3 id="inline-equations">Inline equations</h3>
-<p>Inline equations are surrounded by <code>$</code>. For example, the equation <span class="math inline">y = \beta_0 + \beta_1 x + \epsilon</span> is a linear regression model.</p>
-<h3 id="display-equations">Display equations</h3>
-<p>Display equations are surrounded by <code>$$</code>. For example, one way to display the equation for a <a href="https://en.wikipedia.org/wiki/Fourier_series">Fourier series</a> is:</p>
-<p><span class="math display"> f(x) = \frac{a_0}{2} + \sum_{n=1}^{\infty} \left[ a_n \cos \left( \frac{2 \pi n x}{L} \right) + b_n \sin \left( \frac{2 \pi n x}{L} \right) \right] </span></p>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-20-1.png" width="960" class="r-stretch"></section>
+<section id="what-are-we-testing" class="slide level2">
+<h2>What are we testing?</h2>
+<ul>
+<li>The null model is a model with no predictors, i.e.&nbsp;<span class="math inline">y = \beta_0 + \epsilon</span></li>
+<li>The linear model is a model with one predictor, i.e.&nbsp;<span class="math inline">y = \beta_0 + \beta_1 x + \epsilon</span></li>
+<li>We use the t-test to compare the two models:</li>
+</ul>
+<p><span class="math display"> t = \frac{estimate - 0}{Standard\ error} = \frac{\hat{\beta}_1 - 0}{SE(\hat{\beta}_1)} </span> where <span class="math inline">SE(\hat{\beta}_1)</span> is the standard error of the slope estimate:</p>
+<p><span class="math display"> SE(\hat{\beta}_1) = \frac{\hat{\sigma}}{\sqrt{\sum_{i=1}^n (x_i - \bar{x})^2}} </span></p>
+</section></section>
+<section>
+<section id="assesing-the-model" class="title-slide slide level1 center">
+<h1>Assesing the model</h1>
+
+</section>
+<section id="interpreting-the-output" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23" data-code-line-numbers="1-2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1"></a>Call<span class="sc">:</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb23-3"><a href="#cb23-3"></a></span>
+<span id="cb23-4"><a href="#cb23-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb23-5"><a href="#cb23-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb23-6"><a href="#cb23-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb23-7"><a href="#cb23-7"></a></span>
+<span id="cb23-8"><a href="#cb23-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb23-9"><a href="#cb23-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb23-10"><a href="#cb23-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb23-11"><a href="#cb23-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb23-12"><a href="#cb23-12"></a><span class="sc">---</span></span>
+<span id="cb23-13"><a href="#cb23-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb23-14"><a href="#cb23-14"></a></span>
+<span id="cb23-15"><a href="#cb23-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb23-16"><a href="#cb23-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb23-17"><a href="#cb23-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>Call</code>: the model formula</li>
+</ul>
+</section>
+<section id="interpreting-the-output-1" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24" data-code-line-numbers="4-6"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a>Call<span class="sc">:</span></span>
+<span id="cb24-2"><a href="#cb24-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb24-3"><a href="#cb24-3"></a></span>
+<span id="cb24-4"><a href="#cb24-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb24-5"><a href="#cb24-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb24-6"><a href="#cb24-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb24-7"><a href="#cb24-7"></a></span>
+<span id="cb24-8"><a href="#cb24-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb24-9"><a href="#cb24-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb24-10"><a href="#cb24-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb24-11"><a href="#cb24-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb24-12"><a href="#cb24-12"></a><span class="sc">---</span></span>
+<span id="cb24-13"><a href="#cb24-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb24-14"><a href="#cb24-14"></a></span>
+<span id="cb24-15"><a href="#cb24-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb24-16"><a href="#cb24-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb24-17"><a href="#cb24-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>Residuals</code>: distribution of the residuals</li>
+</ul>
+</section>
+<section id="interpreting-the-output-2" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25" data-code-line-numbers="8-9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a>Call<span class="sc">:</span></span>
+<span id="cb25-2"><a href="#cb25-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb25-3"><a href="#cb25-3"></a></span>
+<span id="cb25-4"><a href="#cb25-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb25-5"><a href="#cb25-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb25-6"><a href="#cb25-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb25-7"><a href="#cb25-7"></a></span>
+<span id="cb25-8"><a href="#cb25-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb25-9"><a href="#cb25-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb25-10"><a href="#cb25-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb25-11"><a href="#cb25-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb25-12"><a href="#cb25-12"></a><span class="sc">---</span></span>
+<span id="cb25-13"><a href="#cb25-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb25-14"><a href="#cb25-14"></a></span>
+<span id="cb25-15"><a href="#cb25-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb25-16"><a href="#cb25-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb25-17"><a href="#cb25-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>Coefficients</code>: a summary table of the coefficients, their standard errors, t-values, and p-values addressing the hypothesis that the coefficient is 0</li>
+</ul>
+</section>
+<section id="interpreting-the-output-3" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26" data-code-line-numbers="10-12"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1"></a>Call<span class="sc">:</span></span>
+<span id="cb26-2"><a href="#cb26-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb26-3"><a href="#cb26-3"></a></span>
+<span id="cb26-4"><a href="#cb26-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb26-5"><a href="#cb26-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb26-6"><a href="#cb26-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb26-7"><a href="#cb26-7"></a></span>
+<span id="cb26-8"><a href="#cb26-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb26-9"><a href="#cb26-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb26-10"><a href="#cb26-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb26-11"><a href="#cb26-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb26-12"><a href="#cb26-12"></a><span class="sc">---</span></span>
+<span id="cb26-13"><a href="#cb26-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb26-14"><a href="#cb26-14"></a></span>
+<span id="cb26-15"><a href="#cb26-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb26-16"><a href="#cb26-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb26-17"><a href="#cb26-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>(Intercept)</code> term is the mean of the response <strong>when all predictors are 0</strong>, which is not meaningful in most cases. In this case, it is the mean child height when the parent height is 0.</li>
+<li><code>parent</code>: the <strong>slope</strong> coefficient that we are interested in, which represents the change in the <strong>mean</strong> of the response for a <strong>one-unit increase in the predictor</strong>.
+<ul>
+<li>The <em>p-value</em> (<code>Pr</code>) tells us whether the slope is significantly different from 0.</li>
+<li>If it is, then we can conclude that there is a <strong>significant linear relationship</strong> between the predictor and the response.</li>
+</ul></li>
+</ul>
+</section>
+<section id="interpreting-the-output-4" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27" data-code-line-numbers="10-11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a>Call<span class="sc">:</span></span>
+<span id="cb27-2"><a href="#cb27-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb27-3"><a href="#cb27-3"></a></span>
+<span id="cb27-4"><a href="#cb27-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb27-5"><a href="#cb27-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb27-6"><a href="#cb27-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb27-7"><a href="#cb27-7"></a></span>
+<span id="cb27-8"><a href="#cb27-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb27-9"><a href="#cb27-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb27-10"><a href="#cb27-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb27-11"><a href="#cb27-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb27-12"><a href="#cb27-12"></a><span class="sc">---</span></span>
+<span id="cb27-13"><a href="#cb27-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb27-14"><a href="#cb27-14"></a></span>
+<span id="cb27-15"><a href="#cb27-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb27-16"><a href="#cb27-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb27-17"><a href="#cb27-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><p>We can also use the <code>Estimate</code> values to write the equation of the regression line: <span class="math display"> \widehat{child} = 23.94153 + 0.64629 \cdot parent</span></p></li>
+<li><p>For every one-inch increase in the parent height, the child height is predicted to increase by 0.64629 inches.</p></li>
+</ul>
+</section>
+<section id="interpreting-the-output-5" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28" data-code-line-numbers="15-15"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a>Call<span class="sc">:</span></span>
+<span id="cb28-2"><a href="#cb28-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb28-3"><a href="#cb28-3"></a></span>
+<span id="cb28-4"><a href="#cb28-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb28-5"><a href="#cb28-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb28-6"><a href="#cb28-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb28-7"><a href="#cb28-7"></a></span>
+<span id="cb28-8"><a href="#cb28-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb28-9"><a href="#cb28-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb28-10"><a href="#cb28-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb28-11"><a href="#cb28-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb28-12"><a href="#cb28-12"></a><span class="sc">---</span></span>
+<span id="cb28-13"><a href="#cb28-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb28-14"><a href="#cb28-14"></a></span>
+<span id="cb28-15"><a href="#cb28-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb28-16"><a href="#cb28-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb28-17"><a href="#cb28-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>Residual standard error</code>: the standard deviation of the residuals.
+<ul>
+<li>Interpretation: the average amount that the response will <em>deviate</em> from the true regression line.</li>
+</ul></li>
+<li><code>degrees of freedom</code>: the number of observations minus the number of parameters being estimated. Used in hypothesis testing and calculating the standard error of the regression coefficients.
+<ul>
+<li>Can estimate sample size from this number.</li>
+</ul></li>
+</ul>
+</section>
+<section id="interpreting-the-output-6" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29" data-code-line-numbers="16-16"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a>Call<span class="sc">:</span></span>
+<span id="cb29-2"><a href="#cb29-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb29-3"><a href="#cb29-3"></a></span>
+<span id="cb29-4"><a href="#cb29-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb29-5"><a href="#cb29-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb29-6"><a href="#cb29-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb29-7"><a href="#cb29-7"></a></span>
+<span id="cb29-8"><a href="#cb29-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb29-9"><a href="#cb29-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb29-10"><a href="#cb29-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb29-11"><a href="#cb29-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb29-12"><a href="#cb29-12"></a><span class="sc">---</span></span>
+<span id="cb29-13"><a href="#cb29-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb29-14"><a href="#cb29-14"></a></span>
+<span id="cb29-15"><a href="#cb29-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb29-16"><a href="#cb29-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb29-17"><a href="#cb29-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>Multiple R-squared</code>: the proportion of variance explained by the model.</li>
+<li><code>Adjusted R-squared</code>: the proportion of variance explained by the model, adjusted for the number of predictors.</li>
+<li>Interpretation:
+<ul>
+<li>Ranges from 0 to 1.</li>
+<li>Since this is SLR, we can interpret this as the proportion of variance in the response that is explained by <code>parent</code>: 21.05% (from Multiple R-squared).</li>
+</ul></li>
+</ul>
+</section>
+<section id="interpreting-the-output-7" class="slide level2">
+<h2>Interpreting the output</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30" data-code-line-numbers="17-17"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a>Call<span class="sc">:</span></span>
+<span id="cb30-2"><a href="#cb30-2"></a><span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb30-3"><a href="#cb30-3"></a></span>
+<span id="cb30-4"><a href="#cb30-4"></a>Residuals<span class="sc">:</span></span>
+<span id="cb30-5"><a href="#cb30-5"></a>    Min      1Q  Median      3Q     Max </span>
+<span id="cb30-6"><a href="#cb30-6"></a><span class="sc">-</span><span class="fl">7.8050</span> <span class="sc">-</span><span class="fl">1.3661</span>  <span class="fl">0.0487</span>  <span class="fl">1.6339</span>  <span class="fl">5.9264</span> </span>
+<span id="cb30-7"><a href="#cb30-7"></a></span>
+<span id="cb30-8"><a href="#cb30-8"></a>Coefficients<span class="sc">:</span></span>
+<span id="cb30-9"><a href="#cb30-9"></a>            Estimate Std. Error t value <span class="fu">Pr</span>(<span class="sc">&gt;</span><span class="er">|</span>t<span class="sc">|</span>)    </span>
+<span id="cb30-10"><a href="#cb30-10"></a>(Intercept) <span class="fl">23.94153</span>    <span class="fl">2.81088</span>   <span class="fl">8.517</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb30-11"><a href="#cb30-11"></a>parent       <span class="fl">0.64629</span>    <span class="fl">0.04114</span>  <span class="fl">15.711</span>   <span class="sc">&lt;</span><span class="fl">2e-16</span> <span class="sc">**</span><span class="er">*</span></span>
+<span id="cb30-12"><a href="#cb30-12"></a><span class="sc">---</span></span>
+<span id="cb30-13"><a href="#cb30-13"></a>Signif. codes<span class="sc">:</span>  <span class="dv">0</span> <span class="st">'***'</span> <span class="fl">0.001</span> <span class="st">'**'</span> <span class="fl">0.01</span> <span class="st">'*'</span> <span class="fl">0.05</span> <span class="st">'.'</span> <span class="fl">0.1</span> <span class="st">' '</span> <span class="dv">1</span></span>
+<span id="cb30-14"><a href="#cb30-14"></a></span>
+<span id="cb30-15"><a href="#cb30-15"></a>Residual standard error<span class="sc">:</span> <span class="fl">2.239</span> on <span class="dv">926</span> degrees of freedom</span>
+<span id="cb30-16"><a href="#cb30-16"></a>Multiple R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2105</span>,    Adjusted R<span class="sc">-</span>squared<span class="sc">:</span>  <span class="fl">0.2096</span> </span>
+<span id="cb30-17"><a href="#cb30-17"></a>F<span class="sc">-</span>statistic<span class="sc">:</span> <span class="fl">246.8</span> on <span class="dv">1</span> and <span class="dv">926</span> DF,  p<span class="sc">-</span>value<span class="sc">:</span> <span class="er">&lt;</span> <span class="fl">2.2e-16</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><code>F-statistic</code>: the ratio of the variance of the regression model to the variance of the residuals.
+<ul>
+<li>Also known as the partial F-test between the full model and the intercept-only (null) model.</li>
+</ul></li>
+<li><code>p-value</code>: for the linear model, the p-value is the probability that the F-statistic is greater than the observed value under the null hypothesis.
+<ul>
+<li>A significant p-value indicates that the linear model is a better fit than the intercept-only model.</li>
+</ul></li>
+</ul>
+</section></section>
+<section>
+<section id="reporting" class="title-slide slide level1 center">
+<h1>Reporting</h1>
+
+</section>
+<section id="two-methods" class="slide level2">
+<h2>Two methods</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="using-anova">Using ANOVA</h3>
+<h3 id="anovafit"><code>anova(fit)</code></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">formula =</span> child <span class="sc">~</span> parent, <span class="at">data =</span> Galton)</span>
+<span id="cb31-2"><a href="#cb31-2"></a><span class="fu">anova</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Analysis of Variance Table
+
+Response: child
+           Df Sum Sq Mean Sq F value    Pr(&gt;F)    
+parent      1 1236.9 1236.93  246.84 &lt; 2.2e-16 ***
+Residuals 926 4640.3    5.01                      
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1</code></pre>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<h3 id="using-regression">Using Regression</h3>
+<h3 id="summaryfit"><code>summary(fit)</code></h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="fu">summary</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = child ~ parent, data = Galton)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-7.8050 -1.3661  0.0487  1.6339  5.9264 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 23.94153    2.81088   8.517   &lt;2e-16 ***
+parent       0.64629    0.04114  15.711   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.239 on 926 degrees of freedom
+Multiple R-squared:  0.2105,    Adjusted R-squared:  0.2096 
+F-statistic: 246.8 on 1 and 926 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="two-methods-1" class="slide level2">
+<h2>Two methods</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<h3 id="using-anova-1">Using ANOVA</h3>
+<blockquote>
+<p>The ANOVA suggests that the main effect of parent is statistically significant and large (F(1, 926) = 246.84, p &lt; .001)</p>
+</blockquote>
+</div><div class="column" style="width:50%;">
+<h3 id="using-regression-1">Using Regression</h3>
+<blockquote>
+<p>We fitted a linear model (estimated using OLS) to predict child with parent (formula: child ~ parent). The model explains a statistically significant and moderate proportion of variance (R<sup>2</sup> = 0.21, F(1, 926) = 246.84, p &lt; .001, adj. R<sup>2</sup> = 0.21). Within this model, the effect of parent is statistically significant and positive (<span class="math inline">\beta</span> = 0.65, t(926) = 15.71, p &lt; .001).</p>
+</blockquote>
+</div>
+</div>
+<div class="fragment">
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p>For <strong>simple linear models</strong>, <code>summary()</code> provides more information than <code>anova()</code>, but the results are the same.</p>
+</div>
+</div>
+</div>
+</div>
+</section></section>
+<section>
+<section id="lets-practice" class="title-slide slide level1 center">
+<h1>Let’s practice</h1>
+<p>Can we predict the weight of an alligator from its length? <a href="https://canvas.sydney.edu.au/courses/46921/pages/week-10-lectures-linear-functions?module_item_id=1752336">Download data ⬇</a></p>
+
+<img data-src="images/alligator.jpg" style="width:70.0%" class="r-stretch"><p>Photo by <a href="https://unsplash.com/@eyedealstuff?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shelly Collins</a></p>
+</section>
+<section id="explore" class="slide level2">
+<h2>Explore</h2>
+<p>Read the data:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a><span class="fu">library</span>(readxl) <span class="co"># load the readxl package</span></span>
+<span id="cb35-2"><a href="#cb35-2"></a></span>
+<span id="cb35-3"><a href="#cb35-3"></a>alligator <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="at">path =</span> <span class="st">"data/ENVX1002_Lecture_wk10_data.xlsx"</span>, </span>
+<span id="cb35-4"><a href="#cb35-4"></a>  <span class="at">sheet =</span> <span class="st">"Alligator"</span>) <span class="co"># read in the data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>What does the data look like?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1"></a><span class="fu">str</span>(alligator)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>tibble [25 × 2] (S3: tbl_df/tbl/data.frame)
+ $ Length: num [1:25] 58 61 63 68 69 72 72 74 74 76 ...
+ $ Weight: num [1:25] 28 44 33 39 36 38 61 54 51 42 ...</code></pre>
+</div>
+</div>
+</section>
+<section id="plot" class="slide level2">
+<h2>Plot</h2>
+<div class="panel-tabset">
+<ul id="tabset-1" class="panel-tabset-tabby"><li><a data-tabby-default="" href="#tabset-1-1">Using base R</a></li><li><a href="#tabset-1-2">Using <code>ggplot2</code></a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1"></a><span class="fu">plot</span>(<span class="at">x =</span> alligator<span class="sc">$</span>Length, <span class="at">y =</span> alligator<span class="sc">$</span>Weight, </span>
+<span id="cb38-2"><a href="#cb38-2"></a>  <span class="at">xlab =</span> <span class="st">"Length (cm)"</span>, <span class="at">ylab =</span> <span class="st">"Weight (kg)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-33-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-1-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a><span class="fu">library</span>(ggplot2) <span class="co"># load the ggplot2 package</span></span>
+<span id="cb39-2"><a href="#cb39-2"></a><span class="fu">ggplot</span>(<span class="at">data =</span> alligator, <span class="fu">aes</span>(<span class="at">x =</span> Length, <span class="at">y =</span> Weight)) <span class="sc">+</span></span>
+<span id="cb39-3"><a href="#cb39-3"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb39-4"><a href="#cb39-4"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Length (cm)"</span>, <span class="at">y =</span> <span class="st">"Weight (kg)"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-34-1.png" width="960"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="plot-residual-diagnostics" class="slide level2">
+<h2>Plot residual diagnostics</h2>
+<p>To check assumptions, we need to fit the model first, then plot the model.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">formula =</span> Weight <span class="sc">~</span> Length, <span class="at">data =</span> alligator)</span>
+<span id="cb40-2"><a href="#cb40-2"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>)) <span class="co"># set up a 2 x 2 grid for plots</span></span>
+<span id="cb40-3"><a href="#cb40-3"></a><span class="fu">plot</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-35-1.png" width="960" class="r-stretch"></section>
+<section id="check-assumptions" class="slide level2">
+<h2>Check assumptions</h2>
+<h3 id="is-the-relationship-linear">Is the relationship linear?</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="fu">plot</span>(fit, <span class="at">which =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-36-1.png" width="960" class="r-stretch"><p>If the linearity assumption is violated, there is no reason to validate the model since it is no longer suitable for the data.</p>
+</section>
+<section id="dealing-with-non-linearity-transform-the-data" class="slide level2">
+<h2>Dealing with non-linearity: transform the data</h2>
+<div class="cell">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a><span class="fu">library</span>(patchwork)</span>
+<span id="cb42-2"><a href="#cb42-2"></a></span>
+<span id="cb42-3"><a href="#cb42-3"></a>p1 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> alligator, <span class="fu">aes</span>(<span class="at">x =</span> Length, <span class="at">y =</span> Weight)) <span class="sc">+</span></span>
+<span id="cb42-4"><a href="#cb42-4"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb42-5"><a href="#cb42-5"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Length (cm)"</span>, <span class="at">y =</span> <span class="st">"Weight (kg)"</span>, <span class="at">title =</span> <span class="st">"Original"</span>) <span class="sc">+</span></span>
+<span id="cb42-6"><a href="#cb42-6"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linetype =</span> <span class="dv">2</span>)</span>
+<span id="cb42-7"><a href="#cb42-7"></a></span>
+<span id="cb42-8"><a href="#cb42-8"></a>p2 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> alligator, <span class="fu">aes</span>(<span class="at">x =</span> Length, <span class="at">y =</span> <span class="fu">sqrt</span>(Weight))) <span class="sc">+</span></span>
+<span id="cb42-9"><a href="#cb42-9"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb42-10"><a href="#cb42-10"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Length (cm)"</span>, <span class="at">y =</span> <span class="st">"sqrt[Weight (kg)]"</span>, <span class="at">title =</span> <span class="st">"Square root"</span>) <span class="sc">+</span></span>
+<span id="cb42-11"><a href="#cb42-11"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linetype =</span> <span class="dv">2</span>)</span>
+<span id="cb42-12"><a href="#cb42-12"></a></span>
+<span id="cb42-13"><a href="#cb42-13"></a>p3 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> alligator, <span class="fu">aes</span>(<span class="at">x =</span> Length, <span class="at">y =</span> <span class="fu">log</span>(Weight))) <span class="sc">+</span></span>
+<span id="cb42-14"><a href="#cb42-14"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb42-15"><a href="#cb42-15"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Length (cm)"</span>, <span class="at">y =</span> <span class="st">"log[Weight (kg)]"</span>, <span class="at">title =</span> <span class="st">"Natural log"</span>) <span class="sc">+</span></span>
+<span id="cb42-16"><a href="#cb42-16"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linetype =</span> <span class="dv">2</span>)</span>
+<span id="cb42-17"><a href="#cb42-17"></a></span>
+<span id="cb42-18"><a href="#cb42-18"></a>p4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(<span class="at">data =</span> alligator, <span class="fu">aes</span>(<span class="at">x =</span> Length, <span class="at">y =</span> <span class="fu">log10</span>(Weight))) <span class="sc">+</span></span>
+<span id="cb42-19"><a href="#cb42-19"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb42-20"><a href="#cb42-20"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Length (cm)"</span>, <span class="at">y =</span> <span class="st">"log10[Weight (kg)]"</span>, <span class="at">title =</span> <span class="st">"Log base 10"</span>) <span class="sc">+</span></span>
+<span id="cb42-21"><a href="#cb42-21"></a>  <span class="fu">geom_smooth</span>(<span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">linetype =</span> <span class="dv">2</span>)</span>
+<span id="cb42-22"><a href="#cb42-22"></a></span>
+<span id="cb42-23"><a href="#cb42-23"></a>p1 <span class="sc">+</span> p2 <span class="sc">+</span> p3 <span class="sc">+</span> p4</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-37-1.png" width="960" class="r-stretch"></section>
+<section id="natural-log-transformation" class="slide level2">
+<h2>Natural log transformation</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1"></a>fit <span class="ot">&lt;-</span> <span class="fu">lm</span>(<span class="at">formula =</span> <span class="fu">log</span>(Weight) <span class="sc">~</span> Length, <span class="at">data =</span> alligator)</span>
+<span id="cb43-2"><a href="#cb43-2"></a><span class="fu">plot</span>(fit, <span class="at">which =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-38-1.png" width="960" class="r-stretch"></section>
+<section id="natural-log-transformation-check-assumptions-again" class="slide level2">
+<h2>Natural log transformation – Check assumptions again</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>)) <span class="co"># set up a 2 x 2 grid for plots</span></span>
+<span id="cb44-2"><a href="#cb44-2"></a><span class="fu">plot</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
+</div>
+<img data-src="envx1002-w10-lecture_files/figure-revealjs/unnamed-chunk-39-1.png" width="960" class="r-stretch"></section>
+<section id="interpretation" class="slide level2">
+<h2>Interpretation</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="fu">summary</span>(fit)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = log(Weight) ~ Length, data = alligator)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.289266 -0.079989  0.000933  0.102216  0.288491 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 1.335335   0.131394   10.16 5.63e-10 ***
+Length      0.035416   0.001506   23.52  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.1493 on 23 degrees of freedom
+Multiple R-squared:  0.9601,    Adjusted R-squared:  0.9583 
+F-statistic:   553 on 1 and 23 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<ul>
+<li><code>Length</code> is a statistically significant predictor of <code>log(Weight)</code> (p &lt; .001).</li>
+<li>The model explains a statistically significant and large proportion (96%) of variance (R<sup>2</sup> = 0.96, F(1, 23) = 553, p &lt; .001)</li>
+<li>For every 1 cm increase in <code>Length</code>, <code>log(Weight)</code> increases by 0.0354.
+<ul>
+<li><em>Or, for every 1 cm increase in <code>Length</code>, percent increase in <code>Weight</code> is 3.54% (only works when transforming using natural log).</em></li>
+</ul></li>
+</ul>
+</section>
+<section id="summary" class="slide level2">
+<h2>Summary</h2>
+<h3 id="you-should-know-the-workflow-by-now">You should know the workflow by now</h3>
+<ol type="1">
+<li>Explore</li>
+<li>Plot</li>
+<li>Fit model and plot residual diagnostics</li>
+<li>Check assumptions, transform data if necessary. Go back to step 3.</li>
+<li>Interpret</li>
+</ol>
 </section></section>
 <section id="thanks" class="title-slide slide level1 center">
 <h1>Thanks!</h1>
@@ -592,25 +1584,23 @@ F-statistic: 91.38 on 1 and 30 DF,  p-value: 1.294e-10</code></pre>
 
 </div>
 </section>
-
-
     </div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="template_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="template_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="template_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="template_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="template_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="template_files/libs/revealjs/plugin/verticator/verticator.js"></script>
-  <script src="template_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/verticator/verticator.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="template_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="template_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="template_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="envx1002-w10-lecture_files/libs/revealjs/plugin/zoom/zoom.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
