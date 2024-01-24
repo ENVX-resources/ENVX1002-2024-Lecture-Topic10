@@ -17,12 +17,11 @@ knitr::opts_chunk$set(
     echo = TRUE,
     message = FALSE,
     warning = FALSE,
-    cache = TRUE
+    cache = FALSE
 )
 
 if (!require("pacman")) install.packages("pacman", repos = "http://cran.us.r-project.org")
-pacman::p_load(tidyverse, cowplot, HistData, datasauRus, patchwork, broom, remotes)
-pacman::p_load_gh("datalorax/equatiomatic")
+pacman::p_load(tidyverse, cowplot, HistData, patchwork, broom)
 
 ggplot2::theme_set(cowplot::theme_half_open())
 ```
@@ -253,10 +252,8 @@ fit <- lm(child ~ parent, data = Galton)
 fit
 ```
 
-```{r}
-# remotes::install_github("datalorax/equatiomatic")
-equatiomatic::extract_eq(fit, use_coefs = TRUE, coef_digits = 3)
-```
+
+$$ \widehat{child} = 23.9 + 0.646 \cdot parent$$
 
 . . .
 
