@@ -24,11 +24,8 @@ jobs:
         with:
           r-version: "4.3.0"
 
-      - name: Install cURL Headers
-        run: sudo apt-get install libcurl4-openssl-dev
-        
-      - name: Install textshaping prerequisites
-        run: sudo apt install libharfbuzz-dev
+      - name: Install cURL Headers and other dependencies
+        run: sudo apt-get install libcurl4-openssl-dev libharfbuzz-dev libfribidi-dev 
 
       - name: Install R Dependencies
         uses: r-lib/actions/setup-renv@v2
