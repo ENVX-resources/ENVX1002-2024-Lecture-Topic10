@@ -1,7 +1,7 @@
 ---
 title: Topic 10 -- Linear functions
 subtitle: School of Life and Environmental Sciences (SOLES)
-author: Januar Harianto
+author: Liana Pozza
 institute: The University of Sydney
 date: last-modified # today | last-modified
 date-format: "MMM YYYY" # see https://momentjs.com/docs/#/displaying/format/
@@ -474,11 +474,11 @@ plot(fit_eg, which = 5)
 
 We don't want points to exceed the dashed line (which appears once they approach the Cook's distance), because that means they are likely to influence the model greatly.
 
-# Handling violations
+# What can we do if the assumptions aren't met?
 
-## What can we do?
+## It depends...
 
-- Depends on the violation and the type of data i.e. circumstances.
+- Depends which assumption is not met and the type of data i.e. circumstances.
   - If data is **non-linear**, try a transformation of the response variable $y$, from light to extreme:
     - root: $\sqrt{y}$ or $\sqrt{y+1}$ if $y$ contains zeros
     - log: $\log(y)$ or $\log(y+1)$ if $y$ contains zeros
@@ -490,17 +490,17 @@ We don't want points to exceed the dashed line (which appears once they approach
 
 . . .
 
-  - If **equal variances** assumption is violated, same as above.
+  - If **equal variances** assumption is not met, same as above.
   - If **outliers** are present, try removing them, or transforming the response variable $y$.
 
 ## What if that doesn't work?
 
-- If the assumptions are still violated after trying the above, you can try:
+- If the assumptions are still not met after trying the above, you can try:
   - Using a different model e.g. generalized linear model.
   - Using a different type of regression e.g. logistic regression.
   - Using a non-parametric test.
 
-### Model assumptions validated. Now what?
+## Model assumptions are met. Now what?
 
 ```{r}
 summary(fit)
@@ -915,7 +915,7 @@ plot(fit)
 plot(fit, which = 1)
 ```
 
-If the linearity assumption is violated, there is no reason to validate the model since it is no longer suitable for the data.
+If the linearity assumption is not met, there is no reason to validate the model since it is no longer suitable for the data.
 
 ## Dealing with non-linearity: transform the data
 
